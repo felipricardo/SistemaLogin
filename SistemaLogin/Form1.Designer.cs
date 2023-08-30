@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label_BoasVindas = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label_BoasVindas
+            // 
+            this.label_BoasVindas.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_BoasVindas.Location = new System.Drawing.Point(41, 49);
+            this.label_BoasVindas.Name = "label_BoasVindas";
+            this.label_BoasVindas.Size = new System.Drawing.Size(718, 207);
+            this.label_BoasVindas.TabIndex = 0;
+            this.label_BoasVindas.Text = "Tela Inicial";
+            this.label_BoasVindas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label_BoasVindas);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label_BoasVindas;
     }
 }
 
