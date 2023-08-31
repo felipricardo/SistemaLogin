@@ -32,6 +32,7 @@ namespace SistemaLogin
                 if (usuario.Nome == nome && usuario.Senha == senha)
                 {
                     UsuarioLogado = usuario;
+                    return true;
                 }
             }
 
