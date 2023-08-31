@@ -16,5 +16,11 @@ namespace SistemaLogin
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            FormLogin f = new FormLogin();
+            f.ShowDialog();
+        }
     }
 }

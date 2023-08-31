@@ -33,7 +33,7 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSenha = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +51,7 @@
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(15, 47);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(773, 53);
+            this.txtUsuario.Size = new System.Drawing.Size(654, 53);
             this.txtUsuario.TabIndex = 1;
             // 
             // txtSenha
@@ -59,7 +59,7 @@
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(17, 148);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(773, 53);
+            this.txtSenha.Size = new System.Drawing.Size(652, 53);
             this.txtSenha.TabIndex = 3;
             // 
             // label2
@@ -77,27 +77,29 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(19, 247);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(229, 87);
+            this.btnCancelar.Size = new System.Drawing.Size(286, 87);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // button1
+            // btnSenha
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(440, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(229, 87);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "cancelar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSenha.Location = new System.Drawing.Point(362, 247);
+            this.btnSenha.Name = "btnSenha";
+            this.btnSenha.Size = new System.Drawing.Size(307, 87);
+            this.btnSenha.TabIndex = 5;
+            this.btnSenha.Text = "entrar";
+            this.btnSenha.UseVisualStyleBackColor = true;
+            this.btnSenha.Click += new System.EventHandler(this.btnSenha_Click);
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 427);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(693, 385);
+            this.Controls.Add(this.btnSenha);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.label2);
@@ -117,6 +119,6 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSenha;
     }
 }

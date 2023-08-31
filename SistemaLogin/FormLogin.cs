@@ -16,5 +16,15 @@ namespace SistemaLogin
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSenha_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
