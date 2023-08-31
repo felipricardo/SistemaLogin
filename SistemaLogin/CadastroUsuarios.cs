@@ -27,6 +27,14 @@ namespace SistemaLogin
 
         public static bool Login(string nome, string senha)
         {
+            foreach (Usuario usuario in usuarios)
+            {
+                if (usuario.Nome == nome && usuario.Senha == senha)
+                {
+                    UsuarioLogado = usuario;
+                }
+            }
+
             return false;
         }
     }
