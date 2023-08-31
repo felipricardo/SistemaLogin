@@ -26,9 +26,10 @@ namespace SistemaLogin
         {
             string nome = txtUsuario.Text;
             string senha = txtSenha.Text;
+
             if (CadastroUsuarios.Login(nome, senha))
             {
-
+                this.Close();
             }
         }
     }
