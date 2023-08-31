@@ -31,6 +31,13 @@ namespace SistemaLogin
             {
                 this.Close();
             }
+            else
+            {
+                MessageBox.Show("Acesso negado!");
+                txtUsuario.Text = "";
+                txtSenha.Text = "";
+                txtUsuario.Focus();
+            }
         }
     }
 }
