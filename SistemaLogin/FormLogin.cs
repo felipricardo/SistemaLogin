@@ -24,7 +24,12 @@ namespace SistemaLogin
 
         private void btnSenha_Click(object sender, EventArgs e)
         {
+            string nome = txtUsuario.Text;
+            string senha = txtSenha.Text;
+            if (CadastroUsuarios.Login(nome, senha))
+            {
 
+            }
         }
     }
 }
