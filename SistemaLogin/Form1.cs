@@ -24,7 +24,16 @@ namespace SistemaLogin
             while (CadastroUsuarios.UsuarioLogado == null)
             {
                 Visible = false;
+                f.ShowDialog();
+
+                if (FormLogin.Cancelar == true)
+                {
+                    Application.Exit();
+                    return;
+                }
             }
+
+            Visible = true;
         }
     }
 }
