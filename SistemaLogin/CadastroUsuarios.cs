@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaLogin
 {
-    class CadastroUsuarios
+    static class CadastroUsuarios
     {
         private static Usuario[] usuarios =
         {
