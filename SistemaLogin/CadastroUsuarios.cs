@@ -16,5 +16,18 @@ namespace SistemaLogin
             new Usuario(){ Nome = "Marcelo", Senha = "sea" }, 
             new Usuario(){ Nome = "Knies", Senha = "gremio"}
         };
+
+        private static Usuario _userLogado = null;
+
+        public static Usuario UsuarioLogado
+        {
+            get { return _userLogado; }
+            private set { _userLogado = value; }
+        }
+
+        public static bool Login(string nome, string senha)
+        {
+            return false;
+        }
     }
 }
